@@ -1,0 +1,78 @@
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.02);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.home-link.pulse {
+    animation: pulse-animation 2s infinite;
+    transition: transform 0.3s ease;
+
+}
+.home-section{
+    background-image: url("/img/hero/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.home-wrapper{
+margin-top: 288px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.home-title{
+    font-family: "Akronim", sans-serif;
+font-weight: 400;
+font-size: 70px;
+background: linear-gradient(180deg, #ffc401 0%, #94050f 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.home-text{
+    margin-top: 20px;
+    width: 323px;
+    margin-bottom: 40px;
+}
+.desk{
+    display: none;
+}
+@media only screen and (min-width: 1440px) {
+  .home-section{
+    background-image: url("/img/hero/desk.png");
+  }  
+  .home-wrapper{
+    margin-top: 80px;
+    margin-right: 0;
+    margin-left: auto;
+    width: 435px;
+    align-items: start;
+    text-align: left;
+  }
+  .home-title{
+    font-size: 110px;
+  }
+  .desk{
+    display: block;
+  }
+  .home-text{
+    width: 427px;
+    margin-top: 32px;
+    margin-bottom: 27px;
+  }
+  .home-container{
+    padding-bottom: 169px;
+  }
+}
