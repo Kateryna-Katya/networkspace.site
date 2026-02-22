@@ -24,6 +24,7 @@ h3{
     font-weight: 300;
     font-size: 48px;
     text-align: center;
+    text-transform: uppercase;
     background: linear-gradient(180deg, #ffc401 0%, #94050f 100%);
     background-clip: text;
     -webkit-background-clip: text;
