@@ -85,6 +85,9 @@ background-clip: text;
 .about-text{
   width: 319px;
 }
+.about-subtitle{
+  font-size: 48px;
+}
 @media only screen and (min-width: 1440px) {
   .about-container{
     position: relative;
@@ -123,9 +126,6 @@ background-clip: text;
 .game-text{
   width: 327px;
 }
-.game-subtitle{
-  font-size: 32px;
-}
 @media only screen and (min-width: 1440px) {
   .game-container{
     position: relative;
@@ -144,11 +144,37 @@ background-clip: text;
 }
 .game-subtitle{
   text-align: right;
-  font-size: 64px;
-  line-height: 1.2;
 }
 .game-text{
   text-align: right;
   width: 100%;
+}
+}
+/* Wild Pyramid */
+.wild-wrapper{
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+@media only screen and (min-width: 1440px) {
+ .wild-container{
+  position: relative;
+ }
+ .wild-img{
+      position: absolute;
+        right: 8%;
+        top: 27%;
+ }
+ .wild-wrapper {
+  gap: 32px;
+  width: 588px;
+  align-items: start;
+}
+.wild-text{
+  text-align: left;
+}
+.wild-subtitle{
+  text-align: left;
 }
 }

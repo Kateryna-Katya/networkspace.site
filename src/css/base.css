@@ -22,7 +22,7 @@ h2{
 h3{
   font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
     text-transform: uppercase;
     background: linear-gradient(180deg, #ffc401 0%, #94050f 100%);
@@ -52,4 +52,10 @@ h3{
 .btn:active,
 .btn:focus{
   background: #94050f, linear-gradient(180deg, #ff8401 0%, #94050f 100%);
+}
+@media only screen and (min-width: 1440px) {
+  h3{
+    font-size: 64px;
+    line-height: 1.2;
+  }
 }
