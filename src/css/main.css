@@ -20,7 +20,7 @@
     transition: transform 0.3s ease;
 
 }
-.home-section{
+.home-container{
     background-image: url("/img/hero/mob.png");
     background-repeat: no-repeat;
     background-position: top center;
@@ -50,8 +50,9 @@ background-clip: text;
     display: none;
 }
 @media only screen and (min-width: 1440px) {
-  .home-section{
+  .home-container{
     background-image: url("/img/hero/desk.png");
+    padding-bottom: 169px;
   }  
   .home-wrapper{
     margin-top: 80px;
@@ -72,7 +73,40 @@ background-clip: text;
     margin-top: 32px;
     margin-bottom: 27px;
   }
-  .home-container{
-    padding-bottom: 169px;
+}
+/* About the Game */
+.about-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.about-text{
+  width: 319px;
+}
+@media only screen and (min-width: 1440px) {
+  .about-container{
+    position: relative;
+  }
+  .about-subtitle{
+    text-align: left;
+    font-size: 100px;
+    line-height: 1.3;
+  }
+  .about-img{
+    position: absolute;
+    top: 19%;
+    right: 8%;
+  }
+  .about-wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about-text{
+    width: 588px;
+    text-align: left;
+  }
+  .about-text-two{
+    text-align: right;
   }
 }
