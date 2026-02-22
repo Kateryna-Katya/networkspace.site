@@ -125,3 +125,39 @@
         </div>
     </div>
 </section>
+<section class="demo-section" id="demo">
+    <div class="container demo-container">
+        <div class="title-container">
+            <img src="/img/chilipepper.png" alt="chilipepper" loading="lazy">
+            <h2>Game</h2>
+        </div>
+        <div class="demo-wrapper" id="game">
+            <picture>
+                <source srcset="
+                /img/demo/demo-desk.png 1x,
+                /img/demo/demo-desk@2x.png 2x
+                " media="(min-width: 1440px)" />
+                <source srcset="
+                /img/demo/demo-mob.png 1x,
+                /img/demo/demo-mob@2x.png 2x
+                " media="(max-width: 1439px)" />
+                <img class="demo-img" src="/img/demo/demo-mob.png" alt="Hungry Night" loading="lazy" />
+            </picture>
+
+
+            <div class="iframe-wrapper">
+                <iframe id="gameIframe" name="gameIframe"></iframe>
+
+                <button id="closeIframeBtn" class="hidden-close-btn" aria-label="Close">
+                    <img class="close-img" src="/img/demo/close.png" alt="Close">
+                </button>
+            </div>
+            <a class="demo-btn btn pulse" href="#"
+                data-game-url="https://demo.evoplay.games/demo/fullstate/html5/evoplay/triplechili" target="gameIframe">
+                <p>Enter the Game World</p>
+            </a>
+        </div>
+<p class="demo-text">networkspace.site IS A PLATFORM FOR HAVING FUN. THE OUTCOME OF THIS GAME EXPERIENCE SHOULD NOT BE CONSIDERED A
+REFLECTION OF REAL-LIFE RESULTS. GAME IS INTENDED FOR ADULT AUDIENCES OVER 18 YEARS OF AGE. ENJOY THE EXPERIENCE.</p>
+    </div>
+</section>
